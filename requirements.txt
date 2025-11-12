@@ -1,7 +1,18 @@
+# ────────────── Core Web Framework ──────────────
 streamlit==1.39.0
+
+# ────────────── OCR / CV Components ──────────────
 rapidocr-onnxruntime==1.3.25
 opencv-python-headless==4.8.1.78
-pillow==10.4.0
+pillow==10.3.0
+numpy==1.26.4
+
+# ────────────── Data Processing ──────────────
 pandas==2.2.2
 openpyxl==3.1.5
-numpy==1.26.4
+
+# ────────────── Optional but Recommended ──────────────
+xlsxwriter==3.2.0     # 備用 Excel 寫出引擎（防 openpyxl 版本衝突）
+tqdm==4.66.4          # 顯示 OCR 進度條
+python-dateutil==2.9.0.post0  # 日期格式解析（假單日期對齊）
+
